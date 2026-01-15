@@ -1,82 +1,29 @@
 function Home() {
     return (
         <>
-            <div
-                style={{
-                    backgroundColor: "#312e81", 
-                    display: "flex",
-                    justifyContent: "center"
-                }}
-            >
-                <div
-                    style={{
-                        display: "grid",
-                        gridTemplateColumns: "1fr 1fr", 
-                        color: "white",
-                        width: "100%",
-                        maxWidth: "1280px", 
-                    }}
-                >
-                    <div
-                        style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: "1rem", 
-                            alignItems: "center",
-                            justifyContent: "center",
-                            paddingTop: "1rem", 
-                            paddingBottom: "1rem"
-                        }}
-                    >
-                        <h2
-                            style={{
-                                fontSize: "3rem", 
-                                fontWeight: "bold"
-                            }}
-                        >
+            <div className="bg-gradient-to-r from-indigo-900 to-purple-700 flex justify-center min-h-screen">
+                <div className='container grid grid-cols-2 text-white gap-4'>
+                    <div className="flex flex-col gap-6 items-center justify-center py-10">
+                        <h2 className='text-5xl font-extrabold tracking-wide'>
                             Seja Bem Vindo!
                         </h2>
-
-                        <p
-                            style={{
-                                fontSize: "1.25rem" 
-                            }}
-                        >
+                        <p className='text-xl text-gray-200 text-center'>
                             Expresse aqui seus pensamentos e opiniões
                         </p>
 
-                        <div
-                            style={{
-                                display: "flex",
-                                justifyContent: "space-around",
-                                gap: "1rem"
-                            }}
-                        >
-                            <div
-                                style={{
-                                    borderRadius: "0.5rem",
-                                    color: "white",
-                                    border: "2px solid white",
-                                    padding: "0.5rem 1rem"
-                                }}
-                            >
+                        <div className="flex justify-around gap-4">
+                            <div className='rounded-full text-white border-white border-2 py-3 px-6 cursor-pointer 
+                                            hover:bg-white hover:text-purple-700 transition-all duration-300'>
                                 Nova Postagem
                             </div>
                         </div>
                     </div>
 
-                    <div
-                        style={{
-                            display: "flex",
-                            justifyContent: "center"
-                        }}
-                    >
-                        <img
-                            src="https://i.imgur.com/fyfri1v.png"
-                            alt="Imagem Página Home"
-                            style={{
-                                width: "66%"
-                            }}
+                    <div className="flex justify-center items-center">
+                        <img 
+                            src="https://i.imgur.com/fyfri1v.png" 
+                            alt="Imagem Página Home" 
+                            className='w-2/3 rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300'
                         />
                     </div>
                 </div>
