@@ -1,29 +1,31 @@
+
 function Home() {
     return (
         <>
-            <div className="bg-gradient-to-r from-indigo-900 to-purple-700 flex justify-center min-h-screen">
-                <div className='container grid grid-cols-2 text-white gap-4'>
-                    <div className="flex flex-col gap-6 items-center justify-center py-10">
-                        <h2 className='text-5xl font-extrabold tracking-wide'>
-                            Seja Bem Vindo!
+            <div className="bg-indigo-900 flex justify-center">
+                <div className='container grid grid-cols-2 text-white'>
+                    <div className="flex flex-col gap-4 items-center justify-center py-4">
+                        <h2 className='text-5xl font-bold'>
+                            Seja Bem Vinde!
                         </h2>
-                        <p className='text-xl text-gray-200 text-center'>
-                            Expresse aqui seus pensamentos e opiniões
+                        <p className='text-xl'>
+                            Expresse aqui seus pensamentos e opniões
                         </p>
 
                         <div className="flex justify-around gap-4">
-                            <div className='rounded-full text-white border-white border-2 py-3 px-6 cursor-pointer 
-                                            hover:bg-white hover:text-purple-700 transition-all duration-300'>
+                            <div className='rounded text-white 
+                                            border-white border-solid border-2 py-2 px-4'
+                                >
                                 Nova Postagem
                             </div>
                         </div>
                     </div>
 
-                    <div className="flex justify-center items-center">
-                        <img 
-                            src="https://i.imgur.com/fyfri1v.png" 
-                            alt="Imagem Página Home" 
-                            className='w-2/3 rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300'
+                    <div className="flex justify-center ">
+                        <img
+                            src="https://i.imgur.com/fyfri1v.png"
+                            alt="Imagem Página Home"
+                            className='w-2/3'
                         />
                     </div>
                 </div>
